@@ -9,62 +9,11 @@
     ],
     "5": [
       {
-        "1": "Highlight",
-        "4": [
-          {
-            "1": "Directive",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'[my-highlight]'"
-              },
-              {
-                "1": "host",
-                "2": "const {'(mouseenter)' : 'onMouseEnter()', '(mouseleave)' : 'onMouseLeave()'}"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": false,
-            "7": true,
-            "8": false
-          }
-        ],
+        "1": "HighlightDirective",
         "5": [
           {
             "1": "ElementRef",
-            "4": "_element"
-          }
-        ],
-        "7": [
-          {
-            "1": "highlightColor",
-            "2": [
-              {
-                "1": "Input",
-                "2": [
-                  "'my-highlight'"
-                ],
-                "4": false,
-                "5": false,
-                "6": false,
-                "7": false,
-                "8": false
-              }
-            ]
-          },
-          {
-            "1": "defaultColor",
-            "2": [
-              {
-                "1": "Input",
-                "4": false,
-                "5": false,
-                "6": false,
-                "7": false,
-                "8": false
-              }
-            ]
+            "4": "elRef"
           }
         ]
       }
@@ -72,44 +21,47 @@
     "6": "highlight_directive.dart"
   },
   "type": {
-    "Highlight": {
+    "HighlightDirective": {
       "class": "Directive",
       "isComponent": false,
-      "dynamicLoadable": true,
-      "selector": "[my-highlight]",
+      "selector": "[myHighlight]",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "Highlight",
+        "name": "HighlightDirective",
         "moduleUrl": "asset:attribute_directives/lib/highlight_directive.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": [
           {
             "token": {
-              "class": "Identifier",
-              "name": "ElementRef",
-              "moduleUrl": null,
-              "prefix": null,
-              "constConstructor": null,
-              "value": null
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "ElementRef",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
             },
             "query": null,
             "viewQuery": null,
+            "value": null,
             "isAttribute": false,
             "isSelf": false,
             "isHost": false,
             "isSkipSelf": false,
-            "isOptional": false
+            "isOptional": false,
+            "isValue": false
           }
         ]
       },
       "changeDetection": 5,
       "inputs": {
-        "highlightColor": "my-highlight",
-        "defaultColor": "defaultColor"
+        "defaultColor": "defaultColor",
+        "highlightColor": "myHighlight"
       },
       "outputs": {},
       "hostListeners": {

@@ -14,33 +14,9 @@
     "5": [
       {
         "1": "AppComponent",
-        "4": [
+        "7": [
           {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'my-app'"
-              },
-              {
-                "1": "templateUrl",
-                "2": "'app_component.html'"
-              },
-              {
-                "1": "directives",
-                "2": "const [Highlight]"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ],
-        "8": [
-          {
-            "2": "Highlight"
+            "2": "HighlightDirective"
           }
         ]
       }
@@ -51,7 +27,6 @@
     "AppComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "my-app",
       "exportAs": null,
       "type": {
@@ -60,7 +35,6 @@
         "moduleUrl": "asset:attribute_directives/lib/app_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": []
       },
@@ -73,7 +47,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h1>My First Attribute Directive</h1>\n<h4>Pick a highlight color</h4>\n<div>\n  <input type=\"radio\" name=\"colors\" (click)=\"color='lightgreen'\">Green\n  <input type=\"radio\" name=\"colors\" (click)=\"color='yellow'\">Yellow\n  <input type=\"radio\" name=\"colors\" (click)=\"color='cyan'\">Cyan\n</div>\n<p><span [my-highlight]=\"color\">Highlight me!</span></p>\n\n<p><span [my-highlight]=\"color\" [default-color]=\"'violet'\">\nHighlight me too!\n</span></p>\n",
+        "template": "<h1>My First Attribute Directive</h1>\n<h4>Pick a highlight color</h4>\n<div>\n  <input type=\"radio\" name=\"colors\" (click)=\"color='lightgreen'\">Green\n  <input type=\"radio\" name=\"colors\" (click)=\"color='yellow'\">Yellow\n  <input type=\"radio\" name=\"colors\" (click)=\"color='cyan'\">Cyan\n</div>\n<p [myHighlight]=\"color\">Highlight me!</p>\n\n<p [myHighlight]=\"color\" [defaultColor]=\"'violet'\">\nHighlight me too!\n</p>\n",
         "templateUrl": "asset:attribute_directives/lib/app_component.html",
         "styles": [],
         "styleUrls": [],
