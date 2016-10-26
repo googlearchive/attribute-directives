@@ -64,10 +64,14 @@
           }
         ]
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "defaultColor": "defaultColor",
         "highlightColor": "myHighlight"
+      },
+      "inputTypes": {
+        "defaultColor": " String",
+        "highlightColor": " String"
       },
       "outputs": {},
       "hostListeners": {
