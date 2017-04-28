@@ -48,7 +48,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<h1>My First Attribute Directive</h1>\n<h4>Pick a highlight color</h4>\n<div>\n  <input type=\"radio\" name=\"colors\" (click)=\"color='lightgreen'\">Green\n  <input type=\"radio\" name=\"colors\" (click)=\"color='yellow'\">Yellow\n  <input type=\"radio\" name=\"colors\" (click)=\"color='cyan'\">Cyan\n</div>\n<p [myHighlight]=\"color\">Highlight me!</p>\n\n<p [myHighlight]=\"color\" [defaultColor]=\"'violet'\">\nHighlight me too!\n</p>\n",
+        "template": "<h1>My First Attribute Directive</h1>\n\n<h4>Pick a highlight color</h4>\n<div>\n  <input type=\"radio\" name=\"colors\" (click)=\"color='lightgreen'\">Green\n  <input type=\"radio\" name=\"colors\" (click)=\"color='yellow'\">Yellow\n  <input type=\"radio\" name=\"colors\" (click)=\"color='cyan'\">Cyan\n</div>\n<p [myHighlight]=\"color\">Highlight me!</p>\n\n<p [myHighlight]=\"color\" defaultColor=\"violet\">\n  Highlight me too!\n</p>\n\n<hr>\n<p><i>Mouse over the following lines to see fixed highlights</i></p>\n\n<p [myHighlight]=\"'yellow'\">Highlighted in yellow</p>\n<p myHighlight=\"orange\">Highlighted in orange</p>\n",
         "templateUrl": "asset:attribute_directives/lib/app_component.html",
         "styles": [],
         "styleUrls": [],
