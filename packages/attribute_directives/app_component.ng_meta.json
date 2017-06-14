@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "highlight_directive.dart",
+        "1": "src/highlight_directive.dart",
         "5": false
       }
     ],
@@ -28,7 +28,7 @@
         "4": "i0"
       },
       {
-        "1": "highlight_directive.template.dart",
+        "1": "src/highlight_directive.template.dart",
         "4": "i1"
       }
     ]

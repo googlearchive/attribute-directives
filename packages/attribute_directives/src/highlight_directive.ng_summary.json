@@ -18,13 +18,7 @@
         ]
       }
     ],
-    "6": "highlight_directive.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      }
-    ]
+    "6": "highlight_directive.dart"
   },
   "type": {
     "HighlightDirective": {
@@ -35,7 +29,7 @@
       "type": {
         "class": "Type",
         "name": "HighlightDirective",
-        "moduleUrl": "asset:attribute_directives/lib/highlight_directive.dart",
+        "moduleUrl": "asset:attribute_directives/lib/src/highlight_directive.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -46,7 +40,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "ElementRef",
-                "moduleUrl": "asset:angular2/lib/src/core/linker/element_ref.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },
