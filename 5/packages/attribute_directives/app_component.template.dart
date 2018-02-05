@@ -43,17 +43,17 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_15;
   import2.Element _el_16;
   import2.Element _el_18;
-  import2.Text _text_19;
-  import2.Element _el_20;
-  import2.Element _el_22;
-  import2.Text _text_23;
-  import2.Element _el_24;
-  import2.Element _el_25;
+  import2.Text _text_20;
+  import2.Element _el_21;
+  import2.Element _el_23;
+  import2.Text _text_25;
   import2.Element _el_26;
+  import2.Element _el_27;
   import2.Element _el_28;
-  import3.HighlightDirective _HighlightDirective_28_4;
   import2.Element _el_30;
   import3.HighlightDirective _HighlightDirective_30_4;
+  import2.Element _el_32;
+  import3.HighlightDirective _HighlightDirective_32_4;
   String _expr_0;
   String _expr_2;
   var _expr_3;
@@ -106,30 +106,34 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _el_16.append(_text_17);
     import9.autoIdDirective(_el_16, 'heading-');
     _el_18 = createAndAppend(doc, 'p', parentRenderNode);
-    _text_19 = new import2.Text('');
+    import2.Text _text_19 = new import2.Text('The previous heading has ID ');
     _el_18.append(_text_19);
-    _el_20 = createAndAppend(doc, 'h4', parentRenderNode);
-    createAttr(_el_20, 'autoId', 'heading-');
-    import2.Text _text_21 = new import2.Text('Auto-ID at work, again');
-    _el_20.append(_text_21);
-    import9.autoIdDirective(_el_20, 'heading-');
-    _el_22 = createAndAppend(doc, 'p', parentRenderNode);
-    _text_23 = new import2.Text('');
-    _el_22.append(_text_23);
-    _el_24 = createAndAppend(doc, 'hr', parentRenderNode);
-    _el_25 = createAndAppend(doc, 'p', parentRenderNode);
-    _el_26 = createAndAppend(doc, 'i', _el_25);
-    import2.Text _text_27 = new import2.Text('Mouse over the following lines to see fixed highlights');
-    _el_26.append(_text_27);
-    _el_28 = createAndAppend(doc, 'p', parentRenderNode);
-    _HighlightDirective_28_4 = new import3.HighlightDirective(_el_28);
-    import2.Text _text_29 = new import2.Text('Highlighted in yellow');
+    _text_20 = new import2.Text('');
+    _el_18.append(_text_20);
+    _el_21 = createAndAppend(doc, 'h4', parentRenderNode);
+    createAttr(_el_21, 'autoId', 'heading-');
+    import2.Text _text_22 = new import2.Text('Auto-ID at work, again');
+    _el_21.append(_text_22);
+    import9.autoIdDirective(_el_21, 'heading-');
+    _el_23 = createAndAppend(doc, 'p', parentRenderNode);
+    import2.Text _text_24 = new import2.Text('The previous heading has ID ');
+    _el_23.append(_text_24);
+    _text_25 = new import2.Text('');
+    _el_23.append(_text_25);
+    _el_26 = createAndAppend(doc, 'hr', parentRenderNode);
+    _el_27 = createAndAppend(doc, 'p', parentRenderNode);
+    _el_28 = createAndAppend(doc, 'i', _el_27);
+    import2.Text _text_29 = new import2.Text('Mouse over the following lines to see fixed highlights');
     _el_28.append(_text_29);
     _el_30 = createAndAppend(doc, 'p', parentRenderNode);
-    createAttr(_el_30, 'myHighlight', 'orange');
     _HighlightDirective_30_4 = new import3.HighlightDirective(_el_30);
-    import2.Text _text_31 = new import2.Text('Highlighted in orange');
+    import2.Text _text_31 = new import2.Text('Highlighted in yellow');
     _el_30.append(_text_31);
+    _el_32 = createAndAppend(doc, 'p', parentRenderNode);
+    createAttr(_el_32, 'myHighlight', 'orange');
+    _HighlightDirective_32_4 = new import3.HighlightDirective(_el_32);
+    import2.Text _text_33 = new import2.Text('Highlighted in orange');
+    _el_32.append(_text_33);
     _el_5.addEventListener('click', eventHandler1(_handle_click_5_0));
     _el_7.addEventListener('click', eventHandler1(_handle_click_7_0));
     _el_9.addEventListener('click', eventHandler1(_handle_click_9_0));
@@ -137,10 +141,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _el_11.addEventListener('mouseleave', eventHandler0(_HighlightDirective_11_4.onMouseLeave));
     _el_13.addEventListener('mouseenter', eventHandler0(_HighlightDirective_13_4.onMouseEnter));
     _el_13.addEventListener('mouseleave', eventHandler0(_HighlightDirective_13_4.onMouseLeave));
-    _el_28.addEventListener('mouseenter', eventHandler0(_HighlightDirective_28_4.onMouseEnter));
-    _el_28.addEventListener('mouseleave', eventHandler0(_HighlightDirective_28_4.onMouseLeave));
     _el_30.addEventListener('mouseenter', eventHandler0(_HighlightDirective_30_4.onMouseEnter));
     _el_30.addEventListener('mouseleave', eventHandler0(_HighlightDirective_30_4.onMouseLeave));
+    _el_32.addEventListener('mouseenter', eventHandler0(_HighlightDirective_32_4.onMouseEnter));
+    _el_32.addEventListener('mouseleave', eventHandler0(_HighlightDirective_32_4.onMouseLeave));
     init(const [], null);
     return null;
   }
@@ -153,11 +157,11 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     if ((identical(token, import3.HighlightDirective) && ((13 <= nodeIndex) && (nodeIndex <= 14)))) {
       return _HighlightDirective_13_4;
     }
-    if ((identical(token, import3.HighlightDirective) && ((28 <= nodeIndex) && (nodeIndex <= 29)))) {
-      return _HighlightDirective_28_4;
-    }
     if ((identical(token, import3.HighlightDirective) && ((30 <= nodeIndex) && (nodeIndex <= 31)))) {
       return _HighlightDirective_30_4;
+    }
+    if ((identical(token, import3.HighlightDirective) && ((32 <= nodeIndex) && (nodeIndex <= 33)))) {
+      return _HighlightDirective_32_4;
     }
     return notFoundResult;
   }
@@ -167,7 +171,7 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     final import1.AppComponent _ctx = ctx;
     bool firstCheck = (this.cdState == 0);
     final local_h1 = _el_16;
-    final local_h2 = _el_20;
+    final local_h2 = _el_21;
     final currVal_0 = _ctx.color;
     if (!identical(_expr_0, currVal_0)) {
       _HighlightDirective_11_4.highlightColor = currVal_0;
@@ -182,19 +186,19 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
       _expr_2 = currVal_2;
     }
     if (firstCheck) {
-      (_HighlightDirective_28_4.highlightColor = 'yellow');
+      (_HighlightDirective_30_4.highlightColor = 'yellow');
     }
     if (firstCheck) {
-      (_HighlightDirective_30_4.highlightColor = 'orange');
+      (_HighlightDirective_32_4.highlightColor = 'orange');
     }
-    final currVal_3 = import7.interpolate1('The previous heading has ID ', local_h1.id, '');
+    final currVal_3 = import7.interpolate0(local_h1.id);
     if (!identical(_expr_3, currVal_3)) {
-      _text_19.text = currVal_3;
+      _text_20.text = currVal_3;
       _expr_3 = currVal_3;
     }
-    final currVal_4 = import7.interpolate1('The previous heading has ID ', local_h2.id, '');
+    final currVal_4 = import7.interpolate0(local_h2.id);
     if (!identical(_expr_4, currVal_4)) {
-      _text_23.text = currVal_4;
+      _text_25.text = currVal_4;
       _expr_4 = currVal_4;
     }
   }
