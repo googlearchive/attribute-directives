@@ -10,12 +10,10 @@ export 'app_component.dart';
 import 'package:angular/angular.dart';
 import 'src/auto_id_directive.dart';
 import 'src/highlight_directive.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'src/auto_id_directive.template.dart' as _ref1;
 import 'src/highlight_directive.template.dart' as _ref2;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'app_component.dart' as import1;
 import 'dart:html' as import2;
@@ -267,11 +265,9 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }
